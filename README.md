@@ -1,7 +1,9 @@
 SpreePromotionsRuleMatchShippingCountry
 =======================================
 
-Introduction goes here.
+A simple promotion rule for spree to match the shipping address country on an order to a list of eligible countries. This rule can then be used with an PromotionAction such as Free shipping to provide Free shipping only to eligible countries. 
+
+**Please note the this is currently a work in progress and still has some backend UI bugs that need to be resolved.** 
 
 Installation
 ------------
