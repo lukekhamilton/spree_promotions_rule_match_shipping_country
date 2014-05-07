@@ -1,0 +1,12 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  spree:
+    promotion_rule_types: 
+      country: 
+        name: Shipping Countries
+        description: Order's shipping address includes one of the following countries
+    country_rule:
+      choose_countries: Choose countries
+      label: Order must contain %{select} of these countries

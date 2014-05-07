@@ -1,0 +1,5 @@
+<div class="field alpha omega eight columns country_rule_country">
+  <%= label_tag "#{param_prefix}_country_ids_string", Spree.t('country_rule.choose_countries') %>
+  <%= hidden_field_tag "#{param_prefix}[country_ids_string]", promotion_rule.country.join(","), :class => "country_picker fullwidth" %>
+</div>
+
