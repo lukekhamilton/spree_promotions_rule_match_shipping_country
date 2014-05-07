@@ -15,6 +15,7 @@ describe Spree::Promotion::Rules::Country do
       @rule.country << @country
       @rule.country << @country1
   
+      @order.state = 'address' # Must pass the cart state in the checkout process for this to work
     end
 
     it "should be eligible if shipping address country matches promotion country" do
@@ -23,6 +24,11 @@ describe Spree::Promotion::Rules::Country do
 
     it "should not eligible if shipping address country doesn't match promotion country" do 
       @order.ship_address = Spree::Address.create 
+      @rule.should_not be_eligible(@order)
+    end
+
+    it "should not eligible if at the cart state in the checkout process" do 
+      @order.state = 'cart'
       @rule.should_not be_eligible(@order)
     end
   end
