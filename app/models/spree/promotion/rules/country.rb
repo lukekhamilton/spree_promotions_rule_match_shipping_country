@@ -15,15 +15,6 @@
         def eligible?(order, options = {})    
           eligible_countries.include?(order.shipping_address.country) if order.state != 'cart'
         end
-
-        def country_ids_string
-          country_ids.join(',')
-        end
-
-        def country_ids_string=(s)
-          self.country_ids = s.to_s.split(',').map(&:strip)
-        end
-
       end
     end
   end   
