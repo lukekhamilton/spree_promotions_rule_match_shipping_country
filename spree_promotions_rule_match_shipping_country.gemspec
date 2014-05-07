@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.author    = 'Luke Hamilton'
   s.email     = 'luke@lukehamilton.me'
-  # s.homepage  = 'http://www.spreecommerce.com'
+  s.homepage  = 'https://github.com/lukekhamilton/spree_promotions_rule_match_shipping_country/blob/master/spree_promotions_rule_match_shipping_country.gemspec'
 
   #s.files       = `git ls-files`.split("\n")
   #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
