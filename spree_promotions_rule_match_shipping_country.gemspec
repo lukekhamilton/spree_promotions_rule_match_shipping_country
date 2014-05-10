@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_promotions_rule_match_shipping_country'
-  s.version     = '2.2.1'
+  s.version     = '2.2.2'
   s.summary     = 'Promotions rule to match an orders shipping country to a list of eligible countries'
   s.description = 'Promotions rule to match an orders shipping country to a list of eligible countries'
   s.required_ruby_version = '>= 1.9.3'
