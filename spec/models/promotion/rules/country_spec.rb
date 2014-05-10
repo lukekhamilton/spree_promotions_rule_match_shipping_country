@@ -27,8 +27,8 @@ describe Spree::Promotion::Rules::Country do
       @rule.should_not be_eligible(@order)
     end
 
-    it "should not eligible if at the cart state in the checkout process" do 
-      @order.state = 'cart'
+    it "should not eligible if order has no ship_address object" do 
+      @order.ship_address_id = nil
       @rule.should_not be_eligible(@order)
     end
   end

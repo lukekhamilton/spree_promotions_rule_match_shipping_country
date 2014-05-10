@@ -13,7 +13,7 @@
         end
 
         def eligible?(order, options = {})    
-          eligible_countries.include?(order.shipping_address.country) if order.state != 'cart'
+          eligible_countries.include?(order.shipping_address.country) rescue false
         end
       end
     end
